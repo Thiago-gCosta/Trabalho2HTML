@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html{
+    background: #2c2c54;
+}
+.header{
+    margin: 10px 35px;
+    padding: 15px 10px;
+    background: #474787;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 2fr));
+    align-items: center;
+    color: #AAABB8;
+    border-radius: 20px;
+}
+.img1{
+   height: 80px;
+   width: 100px; 
+}
+#botao{
+    max-width: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    border: none;
+    background: #d9d9d9;
+    color: #73737a;
+}
+#botao.contact{
+    background: #2c2c54;
+}
+#botao:hover{
+    color:#d9d9d9;
+    background: #73737a;
+}
+.circ{
+    padding: 100px;
+    border-radius: 100%;
+    background:#aaabb846;
+}
+#c1{
+    position: absolute;
+    left: 110px;
+    top: 330px;
+}
+#c2{
+    position: absolute;
+    top: 200px;
+    left: 160px;
+}
+#c3{
+    position: absolute;
+    top: 210px;
+    left: 40px;
+}
+.circ1{
+    padding: 30px;
+    border-radius: 100%;
+    background:#aaabb846;
+}
+#c4{
+    position: absolute;
+    top: 450px;
+    left: 360px;
+}
+#c5{
+    position: absolute;
+    top: 420px;
+    left: 330px;
+}
+
+.img2{
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    animation-name: astro;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    cursor: crosshair;
+    transition: all 0.2s;
+    transform: rotateY(180deg);
+}
+.img2:active{
+    height: 390px;
+    width: 290px;
+}
+@keyframes astro{
+    from{
+        left: 5%;
+        top: 30%;
+    }
+    to{
+        left: 10%;
+        top: 35%;
+    }
+}
+.center{ 
+    margin: 120px 35px  0px 50%;
+    padding: 15px 10px;
+    background: #d9d9d979;
+    color: #AAABB8;
+    border-radius: 5px;
+}
+fieldset{
+    text-align: center;
+    border: none;
+}
+fieldset input{
+    height: 30px;
+    width: 170px;
+    background:#d9d9d9;
+    border: none;
+    border-radius: 20px;
+    margin: 3px 0 20px;
+
+    color: #73737a;
+    font-size: medium;
+}
+fieldset input#gran{
+    width: 350px;
+}
+
+fieldset .in{
+    background:#474787;
+    color: #d9d9d9;
+    margin: 8px;
+    transition: all 0.5s;
+}
+fieldset .in:hover{
+    transform:scaleX(105%)
+}
+#aaaa{
+    width: 200px;
+}
+fieldset .in:last-child{
+    background: #2c2c54;
+    width: 250px;
+}
+
+footer{
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background:#d9d9d979;
+    color: #AAABB8;
+    margin: 0px 35px 0 35px;
+    padding: 15px 10px;
+    border-radius: 20px;
+}
